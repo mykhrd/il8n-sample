@@ -1,16 +1,16 @@
 {
   "links": {
-    "home": "Accueil",
-    "about": "À propos",
-    "english": "Version Anglaise",
-    "japanese": "Version Française"
+    "home": "ホーム",
+    "about": "概要",
+    "english": "英語",
+    "japanese": "日本語"
   },
   "home": {
-    "title": "Bienvenue",
-    "introduction": "Ceci est un texte d'introduction en Français."
+    "title": "こんにちは",
+    "introduction": "日本語でのご案内"
   },
   "about": {
-    "title": "À propos",
+    "title": "概要",
     "introduction": "Cette page est faite pour vous donner plus d'informations."
   }
 }
