@@ -7,10 +7,10 @@
   },
   "home": {
     "title": "こんにちは",
-    "introduction": "日本語でのご案内"
+    "introduction": "日本語"
   },
   "about": {
     "title": "概要",
-    "introduction": "Cette page est faite pour vous donner plus d'informations."
+    "introduction": "このページは、より多くの情報を提供するために作成されています。"
   }
 }

@@ -20,10 +20,10 @@
                     </span>
                     <span v-if="$i18n.fallbackLocale === 'ja'">
                         <nuxt-link class="Header__Link" v-if="$i18n.locale === 'ja'" :to="`/en` + $route.fullPath" active-class="none" exact>
-                            {{ $t('links.japanese') }}
+                            {{ $t('links.english') }}
                         </nuxt-link>
                         <nuxt-link class="Header__Link" v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact>
-                            {{ $t('links.english') }}
+                            {{ $t('links.japanese') }}
                         </nuxt-link>
                     </span>
                 </nav>

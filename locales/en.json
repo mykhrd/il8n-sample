@@ -7,10 +7,10 @@
   },
   "home": {
     "title": "Welcome",
-    "introduction": "日本語"
+    "introduction": "This is an introduction in English."
   },
   "about": {
     "title": "About",
-    "introduction": "このページは、より多くの情報を提供するために作成されています。"
+    "introduction": "This page is made to give you more informations."
   }
 }
