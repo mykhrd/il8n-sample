@@ -1,30 +1,17 @@
-import _ from 'lodash'
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-export default ({
-  app,
-  store,
-  req,
-  isClient
-}) => {
-
-  let locale = 'ja';
-  if (isClient) {
-    const navigator = _.get(window, 'navigator', {});
-    locale = (_.head(navigator.languages) || navigator.language || navigator.browserLanguage || navigator.userLanguage).substr(0, 2);
-  } else if (req) {
-    locale = req.headers['accept-language'].split(',')[0].toLocaleLowerCase().substr(0, 2);
-  }
-
+export default ({app, store}) => {
+  // Set i18n instance on app
+  // This way we can use it in middleware and pages asyncData/fetch
   app.i18n = new VueI18n({
-    locale: store.state.locale || locale,
-    fallbackLocale: locale,
+    locale: store.state.locale,
+    fallbackLocale: 'en',
     messages: {
       'en': require('~/locales/en.json'),
-      'ja': require('~/locales/ja.json')
+      'fr': require('~/locales/fr.json')
     }
   })
 
@@ -34,7 +21,6 @@ export default ({
     }
     return `/${app.i18n.locale}/${link}`
   }
-  console.log(app.i18n.locale)
-  console.log(app.i18n.fallbackLocale)
 
+  console.log(app.i18n.locale)
 }

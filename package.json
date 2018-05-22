@@ -1,5 +1,5 @@
 {
-  "name": "sample",
+  "name": "sample02",
   "version": "1.0.0",
   "description": "Nuxt.js project",
   "author": "Miyuki Harada <mykhrd@gmail.com>",
@@ -15,7 +15,7 @@
   "dependencies": {
     "lodash": "^4.17.10",
     "nuxt": "^1.0.0",
-    "vue-i18n": "^7.6.0"
+    "vue-i18n": "^7.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
